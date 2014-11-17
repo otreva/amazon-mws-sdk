@@ -867,6 +867,9 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
         if ($request->isSetMarketplaceId()) {
             $parameters['MarketplaceId'] =  $request->getMarketplaceId();
         }
+        if ($request->isSetMWSAuthToken()) {
+            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
+        }
         if ($request->isSetASINList()) {
             $ASINListgetMatchingProductRequest = $request->getASINList();
             foreach  ($ASINListgetMatchingProductRequest->getASIN() as $ASINASINListIndex => $ASINASINList) {
