@@ -1,5 +1,5 @@
 {
-    "name": "choomz/amazon-mws-sdk",
+    "name": "otreva/amazon-mws-sdk",
     "type": "library",
     "license": "Apache-2.0",
     "description": "Amazon MWS PHP SDK",
