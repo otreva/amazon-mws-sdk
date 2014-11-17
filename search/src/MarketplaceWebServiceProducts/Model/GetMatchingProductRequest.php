@@ -129,6 +129,28 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductRequest extends Mark
         $this->_fields['MarketplaceId']['FieldValue'] = $value;
         return $this;
     }
+    
+     /**
+     * Gets the value of the MWSAuthToken property.
+     * 
+     * @return string AuthToken
+     */
+    public function getMWSAuthToken()
+    {
+        return $this->_fields['MWSAuthToken']['FieldValue'];
+    }
+
+    /**
+     * Sets the value of the MWSAuthToken property.
+     * 
+     * @param string AuthToken
+     * @return this instance
+     */
+    public function setMWSAuthToken( $value ) 
+    {
+        $this->_fields['MWSAuthToken']['FieldValue'] = $value;
+        return $this;
+    }
 
     /**
      * Sets the value of the MarketplaceId and returns this instance
@@ -151,6 +173,16 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductRequest extends Mark
     public function isSetMarketplaceId()
     {
         return !is_null($this->_fields['MarketplaceId']['FieldValue']);
+    }
+
+    /**
+     * Checks if AuthToken is set
+     * 
+     * @return bool true if AuthToken  is set
+     */
+    public function isSetMWSAuthToken() 
+    {
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
     }
 
     /**
